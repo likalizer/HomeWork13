@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100B7C092C061619006FEA70 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B7C082C061619006FEA70 /* SampleTableViewCell.swift */; };
+		100B7C0D2C061707006FEA70 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B7C0A2C061707006FEA70 /* CatalogView.swift */; };
+		100B7C0E2C061707006FEA70 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B7C0B2C061707006FEA70 /* CatalogViewController.swift */; };
+		100B7C0F2C061707006FEA70 /* CatalogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B7C0C2C061707006FEA70 /* CatalogModel.swift */; };
 		CE4715832BBC4A9100759142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715822BBC4A9100759142 /* AppDelegate.swift */; };
 		CE4715852BBC4A9100759142 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715842BBC4A9100759142 /* SceneDelegate.swift */; };
 		CE47158A2BBC4A9100759142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4715882BBC4A9100759142 /* Main.storyboard */; };
@@ -19,9 +23,6 @@
 		CE4715C72BBC4BA600759142 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715A62BBC4BA600759142 /* TaskItem.swift */; };
 		CE4715C82BBC4BA600759142 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715A72BBC4BA600759142 /* MainModel.swift */; };
 		CE4715C92BBC4BA600759142 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715A82BBC4BA600759142 /* MainView.swift */; };
-		CE4715D02BBC4BA600759142 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B22BBC4BA600759142 /* CatalogView.swift */; };
-		CE4715D12BBC4BA600759142 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B32BBC4BA600759142 /* CatalogViewController.swift */; };
-		CE4715D22BBC4BA600759142 /* CatalogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B42BBC4BA600759142 /* CatalogModel.swift */; };
 		CE4715D32BBC4BA600759142 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B62BBC4BA600759142 /* FavoriteViewController.swift */; };
 		CE4715D42BBC4BA600759142 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B72BBC4BA600759142 /* FavoriteModel.swift */; };
 		CE4715D52BBC4BA600759142 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715B82BBC4BA600759142 /* FavoriteView.swift */; };
@@ -35,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100B7C082C061619006FEA70 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		100B7C0A2C061707006FEA70 /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = SOURCE_ROOT; };
+		100B7C0B2C061707006FEA70 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = SOURCE_ROOT; };
+		100B7C0C2C061707006FEA70 /* CatalogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogModel.swift; sourceTree = SOURCE_ROOT; };
 		CE47157F2BBC4A9100759142 /* Lesson13HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson13HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4715822BBC4A9100759142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4715842BBC4A9100759142 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +54,6 @@
 		CE4715A62BBC4BA600759142 /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		CE4715A72BBC4BA600759142 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		CE4715A82BBC4BA600759142 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		CE4715B22BBC4BA600759142 /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
-		CE4715B32BBC4BA600759142 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
-		CE4715B42BBC4BA600759142 /* CatalogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogModel.swift; sourceTree = "<group>"; };
 		CE4715B62BBC4BA600759142 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		CE4715B72BBC4BA600759142 /* FavoriteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		CE4715B82BBC4BA600759142 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100B7C042C0615DA006FEA70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				100B7C082C061619006FEA70 /* SampleTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CE4715762BBC4A9100759142 = {
 			isa = PBXGroup;
 			children = (
@@ -208,9 +218,10 @@
 		CE4715B12BBC4BA600759142 /* CatalogScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CE4715B22BBC4BA600759142 /* CatalogView.swift */,
-				CE4715B32BBC4BA600759142 /* CatalogViewController.swift */,
-				CE4715B42BBC4BA600759142 /* CatalogModel.swift */,
+				100B7C042C0615DA006FEA70 /* View */,
+				100B7C0C2C061707006FEA70 /* CatalogModel.swift */,
+				100B7C0A2C061707006FEA70 /* CatalogView.swift */,
+				100B7C0B2C061707006FEA70 /* CatalogViewController.swift */,
 			);
 			path = CatalogScreen;
 			sourceTree = "<group>";
@@ -324,22 +335,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100B7C0E2C061707006FEA70 /* CatalogViewController.swift in Sources */,
 				CE4715C62BBC4BA600759142 /* MainViewController.swift in Sources */,
 				CE4715C42BBC4BA600759142 /* UIView+Identifier.swift in Sources */,
 				CE4715D52BBC4BA600759142 /* FavoriteView.swift in Sources */,
 				CE4715C92BBC4BA600759142 /* MainView.swift in Sources */,
 				CE4715E32BBC6BA700759142 /* LocalStorageService.swift in Sources */,
-				CE4715D22BBC4BA600759142 /* CatalogModel.swift in Sources */,
+				100B7C092C061619006FEA70 /* SampleTableViewCell.swift in Sources */,
 				CE4715E12BBC57F800759142 /* Favorite.swift in Sources */,
+				100B7C0F2C061707006FEA70 /* CatalogModel.swift in Sources */,
 				CE4715D62BBC4BA600759142 /* InitialModel.swift in Sources */,
 				CE4715D32BBC4BA600759142 /* FavoriteViewController.swift in Sources */,
 				CE4715D72BBC4BA600759142 /* InitialView.swift in Sources */,
-				CE4715D12BBC4BA600759142 /* CatalogViewController.swift in Sources */,
 				CE4715D42BBC4BA600759142 /* FavoriteModel.swift in Sources */,
 				CE4715C72BBC4BA600759142 /* TaskItem.swift in Sources */,
 				CE4715832BBC4A9100759142 /* AppDelegate.swift in Sources */,
 				CE4715C82BBC4BA600759142 /* MainModel.swift in Sources */,
-				CE4715D02BBC4BA600759142 /* CatalogView.swift in Sources */,
+				100B7C0D2C061707006FEA70 /* CatalogView.swift in Sources */,
 				CE4715DC2BBC4BA600759142 /* Catalog.swift in Sources */,
 				CE4715852BBC4A9100759142 /* SceneDelegate.swift in Sources */,
 				CE4715C52BBC4BA600759142 /* DataLoaderService.swift in Sources */,
