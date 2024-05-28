@@ -8,12 +8,10 @@
 import Foundation
 
 struct Catalog: Decodable {
-    
     let data: [Pc]
 }
 
 struct Pc: Codable, Hashable {
-    
     let id: Int
     let name: String
     let manufacturer: String
@@ -29,3 +27,4 @@ struct Pc: Codable, Hashable {
         return isFavorite ?? false
     }
 }
+

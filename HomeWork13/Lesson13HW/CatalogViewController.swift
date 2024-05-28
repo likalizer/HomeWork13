@@ -69,9 +69,13 @@ class CatalogViewController: UIViewController {
             let item = model.pcItems[indexPath.row]
             cell.configure(with: item)
             cell.favoriteButtonAction = { [weak self] in
+                guard let self = self else { return }
                 let isFavorite = !item.favorite()
-                self?.model.updateItem(with: isFavorite, at: indexPath.row)
+                self.model.updateItem(with: isFavorite, at: indexPath.row)
                 cell.favoriteButton.setImage(UIImage(systemName: isFavorite ? "star.fill" : "star"), for: .normal)
+                
+               
+                self.model.saveChangesIfNeeded()
             }
             
             return cell
@@ -86,7 +90,7 @@ class CatalogViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 150 
+            return 150  
         }
     }
 

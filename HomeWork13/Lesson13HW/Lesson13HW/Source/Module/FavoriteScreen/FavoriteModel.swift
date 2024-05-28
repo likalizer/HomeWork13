@@ -8,31 +8,28 @@
 import Foundation
 
 protocol FavoriteModelDelegate: AnyObject {
-    
     func dataDidLoad()
 }
 
 class FavoriteModel {
-
+    
     weak var delegate: FavoriteModelDelegate?
     private let localStorage = LocalStorageService()
     
     var favoriteItems: [Favorite] = []
     
     func loadData() {
-        
         favoriteItems = localStorage.getFavorites()
         delegate?.dataDidLoad()
     }
     
     func removeFromFavorite(at index: Int) {
         favoriteItems.remove(at: index)
+        localStorage.saveFavorites(favoriteItems)
     }
     
     func saveChangesIfNeeded() {
-        
-        guard !favoriteItems.isEmpty 
-        else {
+        guard !favoriteItems.isEmpty else {
             localStorage.clearFavorites()
             return
         }
