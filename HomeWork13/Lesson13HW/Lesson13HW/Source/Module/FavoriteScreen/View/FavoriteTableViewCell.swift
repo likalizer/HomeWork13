@@ -7,62 +7,57 @@
 
 import UIKit
 
+
 class FavoriteTableViewCell: UITableViewCell {
     
     static let identifier = "FavoriteTableViewCell"
     
-    private let idLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .gray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 5
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
     }()
     
-    private let nameLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private lazy var idLabel: UILabel = {
+        return createLabel(fontSize: 14, textColor: .gray)
     }()
     
-    private let manufacturerLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .light)
-        label.textColor = .darkGray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private lazy var nameLabel: UILabel = {
+        return createLabel(fontSize: 18, weight: .medium)
     }()
     
-    private let modelLabel: UILabel = {
+    private lazy var manufacturerLabel: UILabel = {
+        return createLabel(fontSize: 16, weight: .light, textColor: .darkGray)
+    }()
+    
+    private lazy var modelLabel: UILabel = {
+        return createLabel(fontSize: 16, weight: .light, textColor: .darkGray)
+    }()
+    
+    private func createLabel(fontSize: CGFloat, weight: UIFont.Weight = .regular, textColor: UIColor = .black) -> UILabel {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .light)
-        label.textColor = .darkGray
+        label.font = UIFont.systemFont(ofSize: fontSize, weight: weight)
+        label.textColor = textColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-    }()
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(idLabel)
-        contentView.addSubview(nameLabel)
-        contentView.addSubview(manufacturerLabel)
-        contentView.addSubview(modelLabel)
+        contentView.addSubview(stackView)
+        
+        [idLabel, nameLabel, manufacturerLabel, modelLabel].forEach {
+            stackView.addArrangedSubview($0)
+        }
         
         NSLayoutConstraint.activate([
-            idLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            idLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            
-            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            nameLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 5),
-            
-            manufacturerLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            manufacturerLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5),
-            
-            modelLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            modelLabel.topAnchor.constraint(equalTo: manufacturerLabel.bottomAnchor, constant: 5),
-            modelLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
         ])
     }
     
